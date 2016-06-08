@@ -1,7 +1,7 @@
 # 📓✏️ ️️code-notes
-### A short list of code snippet _how-to's_
+### A short list of code snippet _how-to's_:
 
-* ## How to: access _localhost_ on a mobile device when using a webpack dev server...
+> ## How to: access _localhost_ on a mobile device when using a webpack dev server...
 
 1. In your ```package.json``` file add a host and port to your webpack dev server script using the following flags:
 ```json
