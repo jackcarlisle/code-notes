@@ -12,10 +12,10 @@
 ```$ npm run dev:serve```
 
 3. In a new terminal tab type the following command:  
-```$ ifconfig```   
+```$ ifconfig | grep inet```   
 
-4. Copy the first 4 numbers after ```inet``` in the ```en0``` section from what gets printed in your terminal:
-![ip](https://cloud.githubusercontent.com/assets/12450298/15893251/654a2090-2d76-11e6-9459-dffd28bed528.png)
+4. Copy the following 4 numbers after ```inet``` from what gets printed in your terminal (this is your IP address for your localhost):
+![ip](https://cloud.githubusercontent.com/assets/12450298/16200515/95cea400-3705-11e6-8e26-19e3619500de.png)
 
 5. Next go to a web browser on your mobile device _(make sure you are on the same network as your dev server)_. Replace where you would usually type ```localhost``` with the 4 numbers from your terminal:  
 ```js
