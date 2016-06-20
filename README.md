@@ -1,7 +1,7 @@
 # 📓✏️ ️️code-notes
 ### A short list of code snippet _how-to's_:
 
-* ## How to: access _localhost_ on a mobile device when using a webpack dev server...
+## How to: access _localhost_ on a mobile device when using a webpack dev server...
 
 1. In your ```package.json``` file add a host and port to your webpack dev server script using the following flags:
 ```json
@@ -24,7 +24,8 @@ http://10.166.136.33:8080/
 ```
 #### You should now be able to see your local site on your mobile device!
 
-* ## How to: detect which browser a user is using...
+
+## How to: detect which browser a user is using...
 
 Usually you would check the User agent string but this can be unreliable because it can be spoofed easily. A more reliable way to detect the browser is to check whether it has features specific to that platform:
 
