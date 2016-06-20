@@ -14,7 +14,7 @@
 3. In a new terminal tab type the following command:  
 ```$ ifconfig | grep inet```   
 
-4. Copy the following 4 numbers after ```inet``` from what gets printed in your terminal (this is your IP address for your localhost):
+4. Copy the following 4 numbers after ```inet``` from what gets printed in your terminal (this is your IP address for your `localhost`):
 ![ip](https://cloud.githubusercontent.com/assets/12450298/16200515/95cea400-3705-11e6-8e26-19e3619500de.png)
 
 5. Next go to a web browser on your mobile device _(make sure you are on the same network as your dev server)_. Replace where you would usually type ```localhost``` with the 4 numbers from your terminal:  
