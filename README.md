@@ -1,5 +1,5 @@
 # 📓✏️ ️️code-notes
-### A short list of code snippet _how-to's_:
+### A short list of random code snippet _how-to's_:
 
 ## How to: access _localhost_ on a mobile device when using a webpack dev server...
 
