@@ -23,3 +23,24 @@ http://localhost:8080/
 http://10.166.136.33:8080/
 ```
 #### You should now be able to see your local site on your mobile device!
+
+## How to: detect which browser a user is using...
+
+Usually you would check the User agent string but this can be unreliable because it can be spoofed easily. A more reliable way to detect the browser is to check whether it has features specific to that platform:
+
+```js
+// Opera 8.0+
+var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+// Firefox 1.0+
+var isFirefox = typeof InstallTrigger !== 'undefined';
+// At least Safari 3+: "[object HTMLElementConstructor]"
+var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
+// Internet Explorer 6-11
+var isIE = /*@cc_on!@*/false || !!document.documentMode;
+// Edge 20+
+var isEdge = !isIE && !!window.StyleMedia;
+// Chrome 1+
+var isChrome = !!window.chrome && !!window.chrome.webstore;
+// Blink engine detection
+var isBlink = (isChrome || isOpera) && !!window.CSS;
+```
