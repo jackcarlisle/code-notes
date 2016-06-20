@@ -20,7 +20,7 @@
 5. Next go to a web browser on your mobile device _(make sure you are on the same network as your dev server)_. Replace where you would usually type ```localhost``` with the 4 numbers from your terminal:  
 ```js
 http://localhost:8080/  
-http://10.166.136.33:8080/
+http://10.166.136.78:8080/
 ```
 #### You should now be able to see your local site on your mobile device!
 
