@@ -29,7 +29,7 @@ http://10.166.136.78:8080/
 
 Usually you would check the User agent string but this can be unreliable because it can be spoofed easily. A more reliable way to detect the browser is to check whether it has features specific to that platform:
 
-```js
+```javascript
 // Opera 8.0+
 var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
 // Firefox 1.0+
