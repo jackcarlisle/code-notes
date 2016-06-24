@@ -27,7 +27,7 @@ http://10.166.136.78:8080/
 
 ## How to: detect which browser a user is using...
 
-Usually you would check the User agent string but this can be unreliable because it can be spoofed easily. A more reliable way to detect the browser is to check whether it has features specific to that platform:
+Usually you would check the User agent string but this can be unreliable because it can be spoofed easily. A more reliable way to detect their browser is to check whether it has features specific to that platform:
 
 ```javascript
 // Opera 8.0+
