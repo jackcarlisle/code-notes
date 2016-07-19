@@ -65,4 +65,15 @@ console.log(uniqueArray); // [{id: 6},{id: 8}]
 ```
 Had to flatten one of the object arrays into an array of pure values which could then be verified against the array that we want to filter.
 
+Refactored solution: 
+```javascript
+var arr3 = arr1.map(function(item) {
+  return item.id;
+});
+var uniqueArray = arr2.filter(function(obj, index) {
+  return arr3.indexOf(obj.id) === -1;
+});
+console.log(uniqueArray); // [{id: 6},{id: 8}]
+```
+
 
