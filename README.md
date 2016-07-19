@@ -45,3 +45,24 @@ var isChrome = !!window.chrome && !!window.chrome.webstore;
 // Blink engine detection
 var isBlink = (isChrome || isOpera) && !!window.CSS;
 ```
+## How to: return unique objects when comparing two arrays of objects
+
+```javascript
+var arr1 = [{id: 1}, {id: 2}, {id: 3}, {id: 4}];
+var arr2 = [{id: 2}, {id: 4}, {id: 6}, {id: 8}];
+
+var idArray1 = [];
+var idArray2 = [];
+var uniqueArray = arr2.filter(function(obj, index) { 
+  idArray1.push(arr1[index].id);
+  idArray2.push(obj.id);
+  var uniqueIdArray = idArray2.filter(function(obj2) {
+    return idArray1.indexOf(obj2) === -1;
+  });
+  return uniqueIdArray.indexOf(obj.id);
+});
+console.log(uniqueArray); // [{id: 6},{id: 8}]
+```
+Had to flatten one of the object arrays into an array of pure values that could then be verified against the array that we want to filter.
+
+
