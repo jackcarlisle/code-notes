@@ -63,6 +63,6 @@ var uniqueArray = arr2.filter(function(obj, index) {
 });
 console.log(uniqueArray); // [{id: 6},{id: 8}]
 ```
-Had to flatten one of the object arrays into an array of pure values that could then be verified against the array that we want to filter.
+Had to flatten one of the object arrays into an array of pure values which could then be verified against the array that we want to filter.
 
 
