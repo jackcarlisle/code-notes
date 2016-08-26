@@ -45,7 +45,7 @@ var isChrome = !!window.chrome && !!window.chrome.webstore;
 // Blink engine detection
 var isBlink = (isChrome || isOpera) && !!window.CSS;
 ```
-## How to: return unique objects when comparing two arrays of objects
+## How to: return unique objects when comparing two arrays of objects...
 
 Naive solution:
 ```javascript
